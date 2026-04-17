@@ -1,0 +1,186 @@
+{
+    "result": [
+      {
+        "name": "Eva",
+        "age": 28,
+        "gender": "Female",
+        "race": "Asian",
+        "occupation": "Digital Marketing Manager",
+        "location": "San Francisco, CA",
+        "industry": "SaaS",
+        "background": {
+          "education": "BA in Marketing from UC Berkeley",
+          "work_environment": "Works in a fast-paced startup environment",
+          "income": "$90,000 per year"
+        },
+        "communication_channel": [
+          "LinkedIn",
+          "Slack",
+          "Gmail"
+        ],
+        "hobbies": {
+          "personal_interests": "Travelling, Hiking, and Photography",
+          "work_related": "Attending digital marketing conferences, Reading marketing blogs"
+        },
+        "professional_goal": {
+          "primary_goal": "Improve email productivity and efficiency",
+          "secondary_goal": "Increase website traffic and engagement through email marketing"
+        },
+        "pain_points": [
+          {
+            "title": "Email overload",
+            "description": "Receives over 100 emails per day and struggles to stay on top of them all"
+          },
+          {
+            "title": "Lack of organization",
+            "description": "Often loses track of important emails or forgets to follow up on leads"
+          },
+          {
+            "title": "Difficulty managing multiple accounts",
+            "description": "Manages email accounts for multiple clients and finds it challenging to switch between them all"
+          }
+        ],
+        "usecase_product": [
+          {
+            "title": "Email templates",
+            "description": "Eva will use Onmail to create and save email templates to save time when responding to common inquiries."
+          },
+          {
+            "title": "Analytics",
+            "description": "Eva will use Onmail's analytics feature to track the success of her email marketing campaigns and make data-driven decisions."
+          }
+        ],
+        "features_needed": [
+          {
+            "feature": "Email Snooze",
+            "description": "Eva needs the ability to snooze emails and set reminders to follow up, so she never misses an important email."
+          },
+          {
+            "feature": "Multi-Account Management",
+            "description": "Eva requires the ability to manage multiple email accounts from one platform to keep all her work organized in one place."
+          }
+        ]
+      },
+      {
+        "name": "Tom",
+        "age": 35,
+        "gender": "Male",
+        "race": "Caucasian",
+        "occupation": "Sales Manager",
+        "location": "New York, NY",
+        "industry": "SaaS",
+        "background": {
+          "education": "MBA from Harvard Business School",
+          "work_environment": "Works in a large corporate environment",
+          "income": "$120,000 per year"
+        },
+        "communication_channel": [
+          "Outlook",
+          "Salesforce",
+          "LinkedIn"
+        ],
+        "hobbies": {
+          "personal_interests": "Playing Golf, Watching Sports",
+          "work_related": "Attending Sales Conferences, Reading Sales Books"
+        },
+        "professional_goal": {
+          "primary_goal": "Increase Sales Revenue",
+          "secondary_goal": "Streamline Sales Process"
+        },
+        "pain_points": [
+          {
+            "title": "Time Management",
+            "description": "Tom has a busy schedule and needs to maximize his time to close deals and meet with clients."
+          },
+          {
+            "title": "Difficulty Following-Up",
+            "description": "Often forgets to follow-up with leads and misses opportunities to close deals."
+          },
+          {
+            "title": "Lack of Personalization",
+            "description": "Struggles to personalize emails to each lead in a timely and efficient manner."
+          }
+        ],
+        "usecase_product": [
+          {
+            "title": "Email Sequences",
+            "description": "Tom will use Onmail to create email sequences for follow-up and lead nurturing, increasing his chances of closing more deals."
+          },
+          {
+            "title": "Email Reminders",
+            "description": "Tom will use Onmail's reminder feature to make sure he never forgets to follow up with a lead or client."
+          }
+        ],
+        "features_needed": [
+          {
+            "feature": "Personalization",
+            "description": "Tom needs the ability to personalize emails easily and efficiently to increase his chances of closing deals."
+          },
+          {
+            "feature": "Email Tracking",
+            "description": "Tom requires the ability to track when prospects open his emails and click on links to gauge interest and follow up accordingly."
+          }
+        ]
+      },
+      {
+        "name": "Maria",
+        "age": 42,
+        "gender": "Female",
+        "race": "Hispanic",
+        "occupation": "Entrepreneur",
+        "location": "Miami, FL",
+        "industry": "SaaS",
+        "background": {
+          "education": "Self-Taught",
+          "work_environment": "Runs her own business from home",
+          "income": "$70,000 per year"
+        },
+        "communication_channel": [
+          "Gmail",
+          "Facebook Messenger"
+        ],
+        "hobbies": {
+          "personal_interests": "Yoga, Cooking, and Gardening",
+          "work_related": "Attending Entrepreneurial Conferences, Reading Business Blogs"
+        },
+        "professional_goal": {
+          "primary_goal": "Grow Business Revenue",
+          "secondary_goal": "Improve Customer Engagement"
+        },
+        "pain_points": [
+          {
+            "title": "Limited Time",
+            "description": "Maria wears many hats as an entrepreneur and needs to maximize her time to increase productivity and efficiency."
+          },
+          {
+            "title": "Inconsistent Branding",
+            "description": "Struggles to keep branding consistent across all customer touchpoints, including email."
+          },
+          {
+            "title": "Low Email Open Rates",
+            "description": "Maria's email open rates are low, and she needs to improve them to increase customer engagement and sales."
+          }
+        ],
+        "usecase_product": [
+          {
+            "title": "Automated Emails",
+            "description": "Maria will use Onmail to automate her email marketing campaigns, saving her time and improving customer engagement."
+          },
+          {
+            "title": "Email Templates",
+            "description": "Maria will use Onmail's pre-designed templates to create professional-looking emails that align with her brand."
+          }
+        ],
+        "features_needed": [
+          {
+            "feature": "Email Analytics",
+            "description": "Maria needs to be able to track her email marketing campaigns' success to make data-driven decisions that grow her business."
+          },
+          {
+            "feature": "Branding Customization",
+            "description": "Maria requires the ability to customize email templates to match her brand and make a strong impression on her customers."
+          }
+        ]
+      }
+    ]
+  }

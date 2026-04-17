@@ -1,0 +1,25 @@
+{
+    "result": [
+      {
+        "competitor_name": "CarbonHero",
+        "strengths": "Offers personalized recommendations for reducing carbon footprint and has a user-friendly interface.",
+        "weaknesses": "Limited tracking capabilities compared to other carbon footprint trackers. Limited availability in certain regions.",
+        "market_share": "15%",
+        "uniqueness": "Provides users with a personalized action plan to reduce their carbon footprint."
+      },
+      {
+        "competitor_name": "My Climate Plan",
+        "strengths": "Offers a comprehensive approach to carbon footprint tracking, including transportation and food consumption.",
+        "weaknesses": "Can be overwhelming for some users due to the amount of data required. Lacks social media integration.",
+        "market_share": "10%",
+        "uniqueness": "Provides a holistic approach to tracking and reducing carbon footprint, including tips for sustainable living beyond carbon reduction."
+      },
+      {
+        "competitor_name": "Ecolife",
+        "strengths": "Offers a wide range of sustainability resources beyond carbon footprint tracking, including green product recommendations.",
+        "weaknesses": "Lacks personalized tracking capabilities. Limited availability in certain regions.",
+        "market_share": "8%",
+        "uniqueness": "Provides a comprehensive sustainability resource hub for users beyond carbon tracking, including tips for reducing waste and conserving energy."
+      }
+    ]
+  }

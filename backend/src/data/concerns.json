@@ -1,0 +1,14 @@
+{
+    "result": [
+      {
+        "question": "Does Onmail have any features to help me prioritize my emails?",
+        "proposed_solution": "Yes, Onmail has several features designed to help users prioritize their emails. First, it offers customizable email filters, allowing users to automatically sort their incoming messages based on sender, subject, content, and other criteria. Second, Onmail has a built-in task manager that can be integrated with emails, allowing users to easily create to-do lists and reminders directly from their inbox. Finally, Onmail has a feature called 'Snooze', which allows users to temporarily remove emails from their inbox and set a reminder to deal with them at a later time. By using these features, users can streamline their email management process and focus on the most important messages first.",
+        "is_highlighted": true
+      },
+      {
+        "question": "Is Onmail suitable for businesses of all sizes?",
+        "proposed_solution": "Yes, Onmail is designed to be a versatile email productivity tool that can help businesses of all sizes manage their emails more efficiently. Whether you're a small business owner or part of a large corporation, Onmail's customizable filters, task management system, and snooze feature can help you prioritize your messages, reduce clutter in your inbox, and improve your overall productivity. Additionally, Onmail's user-friendly interface and integration with other popular productivity tools make it easy to adopt and use, regardless of your business's size or technical expertise.",
+        "is_highlighted": false
+      }
+    ]
+  }
