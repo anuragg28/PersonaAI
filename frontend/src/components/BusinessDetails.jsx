@@ -40,7 +40,8 @@ export default function BusinessDetails() {
         setDetails({...details, isFeature: featureAvailability})
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         const {brandName, productDescription, industry, businessType} = details
         personaStore.setState({details: {brandName, productDescription, industry, businessType}, concerns: [], personas: []})
         navigate('/persona/report')

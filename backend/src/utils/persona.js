@@ -1,10 +1,8 @@
-const { AzureOpenAI } = require("openai");
+const { OpenAI } = require("openai");
 require("dotenv").config();
 
-const endpoint = process.env.OPENAI_ENDPOINT;
-const apiKey = process.env.OPENAI_KEY1;
-const apiVersion = "2024-04-01-preview";
-const deployment = "gpt-35-turbo";
+const apiKey = process.env.OPENAI_API_KEY;
+const deployment = "gemini-2.5-flash";
 
 async function generatePersona(details) {
   try {
@@ -20,11 +18,9 @@ async function generatePersona(details) {
     } = details;
 
     console.log("== Get completions Sample ==");
-    const client = new AzureOpenAI({
-      endpoint,
+    const client = new OpenAI({
       apiKey,
-      apiVersion,
-      deployment,
+      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
     });
 
     const formattedFeatures = Array.isArray(features)
@@ -93,9 +89,10 @@ Generate this persona in a friendly and engaging way that marketers and business
   `;
 
     const result = await client.chat.completions.create({
-      messages: [{ role: "system", content: prompt }],
+      messages: [{ role: "user", content: prompt }],
       model: deployment,
-      max_tokens: 1000 * numResponse,
+      model: deployment,
+      max_tokens: 8192,
       temperature: 0.8,
       stop: ["<end>"],
     });
@@ -106,6 +103,7 @@ Generate this persona in a friendly and engaging way that marketers and business
 
     for (let i = 0; i < result.choices.length; i++) {
       let response = result.choices[i].message.content;
+      response = response.replace(/```json/g, "").replace(/```/g, "").trim();
       console.log(`Persona ${i}: ${response}`);
 
       const pRes = await JSON.parse(response);

@@ -1,10 +1,8 @@
-const { AzureOpenAI } = require("openai");
+const { OpenAI } = require("openai");
 require("dotenv").config();
 
-const endpoint = process.env.OPENAI_ENDPOINT;
-const apiKey = process.env.OPENAI_KEY1;
-const apiVersion = "2024-04-01-preview";
-const deployment = "gpt-35-turbo";
+const apiKey = process.env.OPENAI_API_KEY;
+const deployment = "gemini-2.5-flash";
 
 async function generateBusinessPlan(
   brandName,
@@ -15,11 +13,9 @@ async function generateBusinessPlan(
 ) {
   try {
     console.log("== Get completions Sample ==");
-    const client = new AzureOpenAI({
-      endpoint,
+    const client = new OpenAI({
       apiKey,
-      apiVersion,
-      deployment,
+      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
     });
 
     let prompt = `
@@ -42,7 +38,7 @@ async function generateBusinessPlan(
     const result = await client.chat.completions.create({
       messages: [{ role: "system", content: prompt }],
       model: deployment,
-      max_tokens: 500 * numResponse,
+      max_tokens: 8192,
       temperature: 0.8,
       stop: ["<end>"],
     });
@@ -53,6 +49,7 @@ async function generateBusinessPlan(
 
     for (let i = 0; i < result.choices.length; i++) {
       let response = result.choices[i].message.content;
+      response = response.replace(/```json/g, "").replace(/```/g, "").trim();
       console.log(`Persona ${i}: ${response}`);
 
       const pRes = await JSON.parse(response);
