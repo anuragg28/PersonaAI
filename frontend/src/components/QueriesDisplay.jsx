@@ -23,7 +23,7 @@ export default function QueriesDisplay() {
         if(concerns?.length) return {success: true}
 
         const request = {
-          url: "http://localhost:4500/concerns",
+          url: "https://personaai-o1ri.onrender.com/",
           method: "POST",
           data: { ...details, numResponse: 6 },
         };
