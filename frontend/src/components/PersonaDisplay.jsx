@@ -29,7 +29,7 @@ const PersonaDisplay = () => {
       console.log("API CALL STARTED 🔥");
 
       const request = {
-        url: "https://personaai-o1ri.onrender.com/api/persona",
+        url: "https://personaai-o1ri.onrender.com/persona",
         method: "POST",
         data: {
           ...details,
